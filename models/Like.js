@@ -5,7 +5,7 @@ class Like extends Model {}
 Like.init(
   {
     reactionType: DataTypes.STRING,
-    createdAt: DataTypes.STRING,
+    // createdAt: DataTypes.STRING,
   },
   {
     sequelize: db,
@@ -13,6 +13,6 @@ Like.init(
   }
 );
 
-// db.sync();
+db.sync();
 
-module.exports = Like;
+module.exports = {Like};

@@ -6,14 +6,14 @@ Post.init(
   {
     title: DataTypes.STRING,
     body: DataTypes.STRING,
-    CreatedAt: DataTypes.STRING,
+    // createdAt: DataTypes.STRING,
   },
   {
     sequelize: db,
-    modelName: "Post",
+    modelName: "Post"
   }
 );
 
-// db.sync();
+db.sync();
 
-module.exports = Post;
+module.exports = {Post};

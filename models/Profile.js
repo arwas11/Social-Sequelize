@@ -14,6 +14,6 @@ Profile.init(
   }
 );
 
-// db.sync();
+db.sync();
 
-module.exports = Profile;
+module.exports = {Profile};
